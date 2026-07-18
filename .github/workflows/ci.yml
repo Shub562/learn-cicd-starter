@@ -31,3 +31,6 @@ jobs:
 
       - name: Run Style Checks
         run: test -z "$(go fmt ./...)"
+
+      - name: Run go fmt
+        run: go fmt ./...
