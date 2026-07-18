@@ -28,4 +28,4 @@ jobs:
 
       - name: 'Push'
         run: |
-          gcloud builds submit --tag us-central1-docker.pkg.dev/project-684625c7-55f6-4de6-bf7/my-repo/my-image:latest .
+          gcloud builds submit --tag us-central1-docker.pkg.dev/project-684625c7-55f6-4de6-bf7/notely-ar-repo/notely:latest .
