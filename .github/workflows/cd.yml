@@ -23,6 +23,9 @@ jobs:
       - name: 'Set up Cloud SDK'
         uses: 'google-github-actions/setup-gcloud@v2'
 
-      - name: 'Build and push'
+      - name: 'Build Go binary'
+        run: ./scripts/buildprod.sh
+
+      - name: 'Push'
         run: |
           gcloud builds submit --tag us-central1-docker.pkg.dev/project-684625c7-55f6-4de6-bf7/my-repo/my-image:latest .
